@@ -1,0 +1,81 @@
+{
+  "qualifications": [
+    {
+      "name": "renatinha gracin",
+      "prec": "18",
+      "cp": "1234567",
+      "cpf": "123.132.121-03",
+      "posto": "major",
+      "om": "hmasp",
+      "codom": "123456",
+      "id": "orxrwLv"
+    },
+    {
+      "name": "forrest gump",
+      "prec": "56",
+      "cp": "654654646",
+      "cpf": "6546456464646",
+      "posto": "sgt",
+      "om": "15 rm",
+      "codom": "65465464",
+      "adctpsv": 45646,
+      "id": "3kcr30d"
+    },
+    {
+      "name": "ZÉ DAS COVES",
+      "prec": "98",
+      "cp": "9876541",
+      "cpf": "98765432199",
+      "posto": "SD",
+      "om": "22RM",
+      "codom": "654987",
+      "soldo": "",
+      "adctpsv": "",
+      "id": "VpE3jkI"
+    },
+    {
+      "name": "neymar jr",
+      "prec": "98",
+      "cp": "646546",
+      "cpf": "98765432111",
+      "posto": "marechall",
+      "om": "23rm",
+      "codom": "4654978",
+      "soldo": "",
+      "adctpsv": "",
+      "id": "zKxvq1x"
+    }
+  ],
+  "soldos": [
+    {
+      "id": "1",
+      "posto/grad": "Marechal-das-Galaxias",
+      "valor": "15000.00"
+    },
+    {
+      "id": "2",
+      "posto/grad": "Sargento-Mor",
+      "valor": "4555.77"
+    },
+    {
+      "id": "3",
+      "posto/grad": "Soldado Universal",
+      "valor": "2500.50"
+    }
+  ],
+  "dates": [
+    {
+      "borndate": "",
+      "diedate": ""
+    }
+  ],
+  "additional": [
+    {
+      "nrdependentes": "",
+      "isentoIR": "",
+      "inconsistenciaobito": "",
+      "pensaoterminal": "",
+      "pj13": ""
+    }
+  ]
+}
