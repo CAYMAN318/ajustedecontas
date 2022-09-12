@@ -87,17 +87,17 @@
                     <ul class="list-group list-group-horizontal mt-2 mb-1">
                         <li class="list-group-item me-1 text-danger text-center">FUSEX</li>
                         <li class="list-group-item me-1 text-danger text-end col-1">Z-01</li>
-                        <input class="border-danger rounded-2" id="fusexz01" type="number">
+                        <input class="border-danger rounded-2" id="fusexz01" type="number" v-model="fusexz01">
                     </ul>
                     <ul class="list-group list-group-horizontal mb-1">
                         <li class="list-group-item me-1 text-danger text-center">Pens Mil 10,5%</li>
                         <li class="list-group-item me-1 text-danger text-end col-1">Z-02</li>
-                        <input class="border-danger rounded-2" id="pmilz02" type="number">
+                        <input class="border-danger rounded-2" id="pmilz02" type="number" v-model="pmilz02">
                     </ul>
                         <ul class="list-group list-group-horizontal mb-1">
                         <li class="list-group-item  me-1 text-danger text-center">Pens Mil 1,5%</li>
                         <li class="list-group-item me-1 text-danger text-end col-1">Z-05</li>
-                        <input class="border-danger rounded-2" id="pmilz05" type="number">
+                        <input class="border-danger rounded-2" id="pmilz05" type="number" v-model="pmilz05">
                     </ul>
                     <ul class="list-group list-group-horizontal mb-1">
                     <li class="list-group-item me-1 text-danger text-center">IRRF</li>
@@ -109,6 +109,28 @@
                         <li class="list-group-item me-1 text-danger text-end col-1">Z-99</li>
                         <input class="border-danger rounded-2" id="pensjud" type="number">
                     </ul>
+                    <ul class="list-group list-group-horizontal mb-1">
+                        <li class="list-group-item me-1 text-danger text-center">FUSEX</li>
+                        <li class="list-group-item me-1 text-danger text-end col-1">Z-M5</li>
+                        <input class="border-danger rounded-2" id="fusexzm5" type="number">
+                    </ul>
+                    <ul class="list-group list-group-horizontal mb-1">
+                        <li class="list-group-item me-1 text-danger text-center">FUSEX</li>
+                        <li class="list-group-item me-1 text-danger text-end col-1">Z-M7</li>
+                        <input class="border-danger rounded-2" id="fusexzm7" type="number">
+                    </ul>
+                    <div class="h5 mt-4 text-danger"><u>DESCONTO RECEBIMENTO INDEVIDO</u></div>
+                    <ul class="list-group list-group-horizontal mt-2 mb-1">
+                        <li class="list-group-item me-1 text-danger text-center">"X" meses Óbito</li>
+                        <li class="list-group-item me-1 text-danger text-end col-1">Z-33</li>
+                        <input class="border-danger rounded-2" id="xmesesobito" type="number">
+                    </ul>
+                    <ul class="list-group list-group-horizontal mb-1">
+                        <li class="list-group-item me-1 text-danger text-center">Ano Óbito +1</li>
+                        <li class="list-group-item me-1 text-danger text-end col-1">Z-33</li>
+                        <input class="border-danger rounded-2" id="xmesesobito" type="number">
+                    </ul>
+                    <div class="h4 text-danger fw-bold mt-3">TOTAL DESCONTOS: {{ totaldescontos }}</div>
 
                   </div>
               </form>
@@ -124,15 +146,22 @@ export default {
        return {
            soldo : "",
            adctpsv : "",
-           adchab : ""
+           adchab : "",
+           fusexz01: "",
+           pmilz02: "",
+           irrf: "",
+
        }
     
     },
     computed : {
         totalbruto (){
             return ((this.soldo) + (this.adctpsv) + (this.adchab))
+        },
+
+        totaldescontos () {
+            return ((this.fusexz01) + (this.pmilz02) + (this.irrf))
         }
-        
     }
 }
 </script>
